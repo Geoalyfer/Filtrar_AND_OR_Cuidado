@@ -1,0 +1,10 @@
+É possível executar somente uma parte do código que está sendo programado, apenas selecionando as linhas que se deseja saber o resultado da execução (F5). Isso facilita a validação dos dados analisados.
+
+Quando se utiliza o OR, é preciso colocar um parêntese após o AND para restrigir a execução do OR. 
+Caso o parentese nao seja utilizado, outras linhas da coluna codigo_loja serão mostrados também.
+
+SELECT *
+	FROM venda
+WHERE codigo_loja = 'CL001'
+	AND (codigo_produto = '10001' OR codigo_produto = '10014')
+
